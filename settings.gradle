@@ -1,1 +1,1 @@
-include ':app', ':AlivcLiveRecord-release1.0.0'
+include ':app', ':AlivcLiveRecord-release1.0.0', ':AlivcBubblingAnimationViewRelease1.0.0'

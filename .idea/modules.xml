@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AlivcBubblingAnimationViewRelease1.0.0/AlivcBubblingAnimationViewRelease1.0.0.iml" filepath="$PROJECT_DIR$/AlivcBubblingAnimationViewRelease1.0.0/AlivcBubblingAnimationViewRelease1.0.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/AlivcLiveRecord-release1.0.0/AlivcLiveRecord-release1.0.0.iml" filepath="$PROJECT_DIR$/AlivcLiveRecord-release1.0.0/AlivcLiveRecord-release1.0.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/DLVIDEO.iml" filepath="$PROJECT_DIR$/DLVIDEO.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />

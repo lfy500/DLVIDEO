@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/register_margin_left">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/register_margin_top"
+            android:text="@string/binding_text_1" />
+
+        <EditText
+            android:id="@+id/binding_phone"
+            style="@style/Register_Edit_Bg"
+            android:hint="@string/binding_edit_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/register_margin_top"
+            android:text="@string/binding_text_2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/binding_identifying"
+                style="@style/Register_Edit_Bg"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:hint="@string/binding_edit_2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/register_edit_margin"
+                android:layout_marginTop="@dimen/register_edit_margin"
+                android:layout_weight="1"
+                android:background="@color/gree_4"
+                android:gravity="center"
+                android:text="@string/binding_identifying" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/gree_4"
+        android:text="@string/binding_button"
+        android:textColor="@color/white" />
+</FrameLayout>

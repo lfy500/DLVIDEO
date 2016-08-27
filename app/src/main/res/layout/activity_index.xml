@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/index_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/index_bottom">
+
+        <Button
+            android:id="@+id/index_register"
+            android:layout_width="@dimen/index_button_width"
+            android:layout_height="@dimen/index_button_height"
+            android:layout_marginLeft="@dimen/index_other"
+            android:layout_marginRight="@dimen/index_center"
+            android:layout_weight="1"
+            android:text="@string/index_register" />
+
+        <Button
+            android:id="@+id/index_login"
+            android:layout_width="@dimen/index_button_width"
+            android:layout_height="@dimen/index_button_height"
+            android:layout_marginLeft="@dimen/index_center"
+            android:layout_marginRight="@dimen/index_other"
+            android:layout_weight="1"
+            android:text="@string/index_login" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,11 +1,14 @@
 package com.example.lfy.dlvideo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.example.lfy.dlvideo.guide.GuideInto;
 
 /**
  * Created by lfy on 2016/8/10.
@@ -38,6 +41,13 @@ public class PlaceholderFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
         TextView textView = (TextView) rootView.findViewById(R.id.section_label);
         textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), GuideInto.class);
+                startActivity(intent);
+            }
+        });
         return rootView;
     }
 

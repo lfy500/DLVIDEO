@@ -6,4 +6,44 @@
 
     <color name="white">#ffffff</color>
     <color name="gray">#8e8e93</color>
+    <color name="teal">#00796B</color>
+    <color name="brown">#8D6E63</color>
+    <color name="blue">#2196F3</color>
+    <color name="grey">#607D8B</color>
+    <color name="orange">#F57C00</color>
+
+
+    <color name="gray_1">#efeff4</color>
+    <color name="gray_2">#ecf0f1</color>
+    <color name="gray_3">#dbdbdb</color>
+    <color name="gray_4">#e4e4e4</color>
+    <color name="gray_5">#a9b7b7</color>
+    <color name="gray_6">#8e8e93</color>
+    <color name="gray_7">#33475f</color>
+    <color name="gray_8">#4a4a4a</color>
+
+    <color name="red_1">#ff3b30</color>
+    <color name="red_2">#eb4f38</color>
+    <color name="red_3">#d81e06</color>
+
+    <color name="gree_1">#4cd964</color>
+    <color name="gree_2">#00bb9c</color>
+    <color name="gree_3">#11cd6e</color>
+    <color name="gree_4">#36ab60</color>
+
+
+    <color name="blue_1">#12b7f5</color>
+    <color name="blue_2">#00aaee</color>
+    <color name="blue_3">#56abe4</color>
+    <color name="blue_4">#007aff</color>
+
+
+    <color name="yellow_1">#fac600</color>
+
+    <color name="orange_1">#ea8010</color>
+    <color name="orange_2">#ff9500</color>
+
+    <color name="zese">#db639b</color>
+
+
 </resources>
