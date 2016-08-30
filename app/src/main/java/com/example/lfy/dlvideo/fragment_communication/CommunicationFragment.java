@@ -1,4 +1,4 @@
-package com.example.lfy.dlvideo.fragment;
+package com.example.lfy.dlvideo.fragment_communication;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,11 +13,12 @@ import com.example.lfy.dlvideo.R;
 /**
  * Created by WangChang on 2016/5/15.
  */
-public class BookFragment extends Fragment {
+public class CommunicationFragment extends Fragment {
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment, container, false);
+        View view = inflater.inflate(R.layout.fragment_communication, container, false);
         return view;
     }
 
@@ -28,10 +29,10 @@ public class BookFragment extends Fragment {
         tv.setText(getArguments().getString("ARGS"));
     }
 
-    public static BookFragment newInstance(String content) {
+    public static CommunicationFragment newInstance(String content) {
         Bundle args = new Bundle();
         args.putString("ARGS", content);
-        BookFragment fragment = new BookFragment();
+        CommunicationFragment fragment = new CommunicationFragment();
         fragment.setArguments(args);
         return fragment;
     }

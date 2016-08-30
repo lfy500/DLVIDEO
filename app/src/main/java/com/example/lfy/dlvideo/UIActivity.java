@@ -11,11 +11,10 @@ import android.support.v7.app.AppCompatActivity;
 import com.ashokvarma.bottomnavigation.BadgeItem;
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
-import com.example.lfy.dlvideo.fragment.BookFragment;
-import com.example.lfy.dlvideo.fragment.GameFragment;
-import com.example.lfy.dlvideo.fragment.HomeFragment;
-import com.example.lfy.dlvideo.fragment.MusicFragment;
-import com.example.lfy.dlvideo.fragment.TvFragment;
+import com.example.lfy.dlvideo.fragment_training.TrainFragment;
+import com.example.lfy.dlvideo.fragment_home.HomeFragment;
+import com.example.lfy.dlvideo.fragment_communication.CommunicationFragment;
+import com.example.lfy.dlvideo.fragment_mine.MineFragment;
 
 import java.util.ArrayList;
 
@@ -63,24 +62,21 @@ public class UIActivity extends AppCompatActivity implements BottomNavigationBar
     }
 
     HomeFragment homeFragment;
-    BookFragment bookFragment;
-    MusicFragment musicFragment;
-    TvFragment tvFragment;
-    GameFragment gameFragment;
+    TrainFragment trainFragment;
+    CommunicationFragment communicationFragment;
+    MineFragment mineFragment;
 
     private ArrayList<Fragment> getFragments() {
         ArrayList<Fragment> fragments = new ArrayList<>();
         homeFragment = HomeFragment.newInstance("Home");
-        bookFragment = BookFragment.newInstance("Books");
-        musicFragment = MusicFragment.newInstance("Music");
-        tvFragment = TvFragment.newInstance("Movies & TV");
-        gameFragment = GameFragment.newInstance("Games");
+        trainFragment = TrainFragment.newInstance("Books");
+        communicationFragment = CommunicationFragment.newInstance("Music");
+        mineFragment = MineFragment.newInstance("Movies & TV");
 
         fragments.add(homeFragment);
-        fragments.add(bookFragment);
-        fragments.add(musicFragment);
-        fragments.add(tvFragment);
-        fragments.add(gameFragment);
+        fragments.add(trainFragment);
+        fragments.add(communicationFragment);
+        fragments.add(mineFragment);
 
         return fragments;
     }

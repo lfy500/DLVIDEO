@@ -1,4 +1,4 @@
-package com.example.lfy.dlvideo.fragment;
+package com.example.lfy.dlvideo.fragment_mine;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,12 +13,12 @@ import com.example.lfy.dlvideo.R;
 /**
  * Created by WangChang on 2016/5/15.
  */
-public class TvFragment extends Fragment {
+public class MineFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment, container, false);
+        View view = inflater.inflate(R.layout.fragment_mine, container, false);
         return view;
     }
 
@@ -29,10 +29,10 @@ public class TvFragment extends Fragment {
         tv.setText(getArguments().getString("ARGS"));
     }
 
-    public static TvFragment newInstance(String content) {
+    public static MineFragment newInstance(String content) {
         Bundle args = new Bundle();
         args.putString("ARGS", content);
-        TvFragment fragment = new TvFragment();
+        MineFragment fragment = new MineFragment();
         fragment.setArguments(args);
         return fragment;
     }

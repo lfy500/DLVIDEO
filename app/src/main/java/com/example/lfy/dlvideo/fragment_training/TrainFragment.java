@@ -1,4 +1,4 @@
-package com.example.lfy.dlvideo.fragment;
+package com.example.lfy.dlvideo.fragment_training;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,12 +13,11 @@ import com.example.lfy.dlvideo.R;
 /**
  * Created by WangChang on 2016/5/15.
  */
-public class GameFragment extends Fragment {
-
+public class TrainFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment, container, false);
+        View view = inflater.inflate(R.layout.fragment_train, container, false);
         return view;
     }
 
@@ -29,10 +28,10 @@ public class GameFragment extends Fragment {
         tv.setText(getArguments().getString("ARGS"));
     }
 
-    public static GameFragment newInstance(String content) {
+    public static TrainFragment newInstance(String content) {
         Bundle args = new Bundle();
         args.putString("ARGS", content);
-        GameFragment fragment = new GameFragment();
+        TrainFragment fragment = new TrainFragment();
         fragment.setArguments(args);
         return fragment;
     }
